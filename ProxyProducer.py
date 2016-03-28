@@ -54,7 +54,7 @@ class LiuLiuProducer(BaseProducer):
     def __init__(self, q, name='LiuLiuPro', pages=1):
         super(LiuLiuProducer, self).__init__(q, name, pages)
         self.type = 3
-        self.url = 'http://www.66ip.cn/nmtq.php?getnum=10000&isp=0&anonymoustype=3&start=&ports=&export=&ipaddress=&area=1&proxytype=0&api=66ip'
+        self.url = 'http://www.66ip.cn/nmtq.php?getnum=50&isp=0&anonymoustype=3&start=&ports=&export=&ipaddress=&area=1&proxytype=0&api=66ip'
 
     def run(self):
         while True:

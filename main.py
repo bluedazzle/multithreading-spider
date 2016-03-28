@@ -19,13 +19,14 @@ def main():
     ip_queue = Queue.Queue()
     number_queue = Queue.Queue()
     available_queue = Queue.Queue()
-    # kuai = KuaiProducer(queue, pages=10)
+    kuai = KuaiProducer(queue, pages=5)
     liu = LiuLiuProducer(queue, pages=1)
-    xi = XiCiProducer(queue)
+    xi = XiCiProducer(queue, pages=1)
 
     # xi.start()
     liu.start()
     # xi.start()
+    # kuai.start()
     print '\n开始地址抓取:\n'
     time.sleep(3)
     worker = ProcessWorker(cq=queue, total=queue.qsize())
@@ -47,7 +48,7 @@ def main():
     print '\n开始地址检查:\n'
     worker = ProcessWorker(cq=ip_queue, total=total_addr)
     worker.start()
-    for c in range(1, 49):
+    for c in range(1, 33):
         check = CheckConsumer(ip_queue, name='check{0}'.format(c))
         check_list.append(check)
         check.start()

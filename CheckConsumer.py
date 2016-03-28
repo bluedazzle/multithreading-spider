@@ -41,7 +41,7 @@ class CheckConsumer(threading.Thread):
     def run(self):
         while True:
             try:
-                addr = self.cq.get(block=True, timeout=1)
+                addr = self.cq.get()
                 self.proxy = addr
                 if self.check_proxy():
                     # print 'ip {0} is available'.format(addr)

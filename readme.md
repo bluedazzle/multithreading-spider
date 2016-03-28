@@ -6,3 +6,8 @@ a simple demo use threading and queue get proxies from proxy sites
 
 1. 使用队列保持同步及任务分配
 2. 任务进度进度显示
+
+
+#### demo:
+
+![screenshot](https://raw.githubusercontent.com/bluedazzle/multithreading-spider/master/demo.gif)
