@@ -10,4 +10,4 @@ a simple demo use threading and queue get proxies from proxy sites
 
 #### demo:
 
-![screenshot](https://raw.githubusercontent .com/bluedazzle/multithreading-spider/master/demo.gif)
+![screenshot](https://raw.githubusercontent.com/bluedazzle/multithreading-spider/master/demo.gif)
