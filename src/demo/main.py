@@ -5,12 +5,13 @@
 
 from __future__ import unicode_literals
 
-from ProxyProducer import KuaiProducer, LiuLiuProducer, XiCiProducer
-from ProxyConsumer import SpiderConsumer
-from CheckConsumer import CheckConsumer, ProcessWorker
-
 import Queue
 import time
+
+from ProxyConsumer import SpiderConsumer
+from src.CheckConsumer import CheckConsumer, ProcessWorker
+
+from src.demo.ProxyProducer import KuaiProducer, LiuLiuProducer, XiCiProducer
 
 
 def main():
